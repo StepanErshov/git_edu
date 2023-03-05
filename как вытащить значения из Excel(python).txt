@@ -20,3 +20,5 @@ for i in range(количество строк):
         data_ves.append(a[i][j])
         data_rost.append(b[i][j])
 print(data_ves, data_rost)
+
+gdsgs
