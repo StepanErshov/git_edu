@@ -1,0 +1,22 @@
+import pandas as pd
+import numpy as np 
+
+data_ves = []
+data_rost = []
+
+#файл эксель с двумя листами и значениями с отступом на одну строку вниз, потому что он почему то не хочет брать все значения когда нет отступа
+
+file = 'значения веса и роста.xlsx'
+xl = pd.ExcelFile(file)
+
+#parse - разобрать
+
+df1 = xl.parse('Лист1')
+df2 = xl.parse('Лист2')
+a = np.array(df1)
+b = np.array(df2)
+for i in range(количество строк):
+    for j in range(количество столбцов):
+        data_ves.append(a[i][j])
+        data_rost.append(b[i][j])
+print(data_ves, data_rost)
