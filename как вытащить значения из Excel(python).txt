@@ -21,4 +21,4 @@ for i in range(количество строк):
         data_rost.append(b[i][j])
 print(data_ves, data_rost)
 
-gdsgssadadsафафвыфаыв
+gdsgssadadsафафвыфаывafasdf
